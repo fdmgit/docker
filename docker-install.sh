@@ -239,7 +239,7 @@ startInstall()
         #sudo docker volume create portainer_data >> ~/docker-script-install.log 2>&1
         mkdir -p docker/portainer/portainer_data
         cd docker/portainer
-        curl https://gitlab.com/bmcgonag/docker_installs/-/raw/main/docker_compose_portainer_ce.yml -o docker-compose.yml >> ~/docker-script-install.log 2>&1
+        curl https://raw.githubusercontent.com/fdmgit/docker/main/docker_compose_portainer_ce.yml -o docker-compose.yml >> ~/docker-script-install.log 2>&1
         echo ""
 
         sudo docker-compose up -d
@@ -266,7 +266,7 @@ startInstall()
         sudo docker volume create portainer_data
         mkdir -p docker/portainer
         cd docker/portainer
-        curl https://gitlab.com/bmcgonag/docker_installs/-/raw/main/docker_compose_portainer_ce_agent.yml -o docker-compose.yml >> ~/docker-script-install.log 2>&1
+        curl https://raw.githubusercontent.com/fdmgit/docker/main/docker_compose_portainer_ce_agent.yml -o docker-compose.yml >> ~/docker-script-install.log 2>&1
         echo ""
         
         if [[ "$OS" == "1" ]]; then
