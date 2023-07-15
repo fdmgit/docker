@@ -314,7 +314,7 @@ echo ""
 
 PS3="Please select the number for your OS / distro: "
 select _ in \
-    "Debian 10 / 11" \
+    "Debian 10 / 11 / 12" \
     "Ubuntu 18.04" \
     "Ubuntu 20.04 / 21.04 / 22.04" \
     "End this Installer"
