@@ -7,3 +7,5 @@ cp bashrc.ini /root/.bashrc
 rm /root/bashrc.ini
 
 chmod +x /root/docker-install.sh
+
+reboot
